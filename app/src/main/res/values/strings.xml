@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Digital Payment</string>
+    <string name="todo">todo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="barcode_text">Scan QR Barcode on the Table to Choosen Menu</string>
+    <string name="todo2">TODO</string>
+    <string name="name_profile">Hi,Dyhan Ramadhan</string>
+    <string name="hi">Hi,</string>
+    <string name="best_place">Best Place</string>
+    <string name="textTitle"> Boba Street number 35C, Jakarta , Indonesia (Near Supermarket) </string>
+    <string name="textTitle2"> Ahmad Yani Street number 19-20C, Jakarta , Indonesia (Near Gas Station) </string>
+    <string name="you_selected">you_selected</string>
+    <string name="Midtrans">Midtrans</string>
+    <string name="WechatPay">WechatPay</string>
+</resources>

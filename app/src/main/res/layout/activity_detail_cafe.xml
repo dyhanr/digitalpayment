@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/cover_atas"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:orientation="vertical"
+        android:background="@drawable/cafedetailbackground"
+        tools:ignore="MissingConstraints">
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <!--Favroite Here-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="305dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/roundedlayout" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10sp"
+                    android:text="Best Cafe FOR YOU !" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/cafe1"
+                        android:padding="7dp"
+                        android:layout_marginLeft="10sp"
+
+                        android:contentDescription="@string/todo2" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginStart="13dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cafe Place"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/fullname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Broadway 5C Street"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal" >
+                        <Button
+                            android:id="@+id/btn_detailcafe1"
+                            android:layout_width="88dp"
+                            android:layout_height="43dp"
+                            android:layout_gravity="center"
+                            android:text="Details"
+                            android:textSize="12dp"
+                            android:layout_marginRight="5sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            tools:ignore="MissingConstraints,OnClick" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/cafe2"
+                        android:padding="7dp"
+                        android:layout_marginLeft="10sp"
+                        android:contentDescription="@string/todo2" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginStart="13dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cafe Day"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/harga2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Night Market at Wangfujing"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal" >
+                        <Button
+                            android:id="@+id/btn_detailcafe2"
+                            android:layout_width="88dp"
+                            android:layout_height="43dp"
+                            android:layout_gravity="center"
+                            android:text="Details"
+                            android:textSize="12dp"
+                            android:layout_marginRight="5dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            tools:ignore="MissingConstraints,OnClick" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/cafe4"
+                        android:padding="7dp"
+                        android:layout_marginLeft="10sp"
+                        android:contentDescription="@string/todo2" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginStart="13dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cafe Tree"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/harga3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="George Stadion Complex"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal" >
+                        <Button
+                            android:id="@+id/btn_detailcafe3"
+                            android:layout_width="88dp"
+                            android:layout_height="43dp"
+                            android:layout_gravity="center"
+                            android:text="Details"
+                            android:textSize="12dp"
+                            android:layout_marginRight="5dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            tools:ignore="MissingConstraints,OnClick" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/cafe1"
+                        android:padding="7dp"
+                        android:layout_marginLeft="10sp"
+                        android:contentDescription="@string/todo2" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginLeft="10sp"
+
+                        android:layout_marginStart="13dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Janji Jiwa Cafe"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/harga4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Liangxiang 215A Street"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal" >
+                        <Button
+                            android:id="@+id/btn_detailcafe4"
+                            android:layout_width="88dp"
+                            android:layout_height="43dp"
+                            android:layout_gravity="center"
+                            android:text="Details"
+                            android:textSize="12dp"
+                            android:layout_marginRight="5dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            tools:ignore="MissingConstraints,OnClick" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/cafe1"
+                        android:padding="7dp"
+                        android:layout_marginLeft="10sp"
+                        android:contentDescription="@string/todo2" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginLeft="10sp"
+
+                        android:layout_marginStart="13dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cafe Row"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thamrin Street number 34F/20"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal" >
+                        <Button
+                            android:id="@+id/btn_detailcafe5"
+                            android:layout_width="88dp"
+                            android:layout_height="43dp"
+                            android:layout_gravity="center"
+                            android:text="Details"
+                            android:textSize="12dp"
+                            android:layout_marginRight="5dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            tools:ignore="MissingConstraints,OnClick" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Welcome euy"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/teal_200"
+        app:fabCradleMargin="20dp"
+        app:fabCradleRoundedCornerRadius="20dp"
+        app:fabCradleVerticalOffset="8dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp"
+            android:background="@color/teal_200"
+            app:menu="@menu/bottom_nav_menu" />
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:contentDescription="@string/todo2"
+        android:src="@drawable/icon_scanner"
+        app:layout_anchor="@id/bottom_app_bar" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

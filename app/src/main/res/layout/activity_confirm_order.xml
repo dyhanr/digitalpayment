@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+<!--   Header Menu-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/icon_dish"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Menu of Cafe Tree"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"  />
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20" />
+        <TextView
+            android:id="@+id/number_table"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:background="@drawable/roundedstyle"
+            android:text="10"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:contentDescription="@string/todo2"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <!--Order List-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="75dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="YOUR ORDER LIST" />
+                <TextView
+                    android:id="@+id/addorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    android:clickable="true"
+                    android:gravity="left"
+                    android:text="Add Order" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/salad"
+                        android:padding="7dp"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/todo2" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginStart="13dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fresh Salad"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rp." />
+                            <TextView
+                                android:id="@+id/harga2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="none"
+                                android:cursorVisible="false"
+                                android:longClickable="false"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:text="15000"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:layout_marginRight="0dp"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/integer_number2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="40sp"
+                            android:clickable="false"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:inputType="none"
+                            android:longClickable="false"
+                            android:text="0"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/coffee1"
+                        android:padding="7dp"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/todo2" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginStart="13dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Americano"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rp." />
+                            <TextView
+                                android:id="@+id/harga3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="none"
+                                android:cursorVisible="false"
+                                android:longClickable="false"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:text="27500"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:layout_marginRight="0dp"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/integer_number3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="40sp"
+                            android:text="1"
+                            android:inputType="none"
+                            android:cursorVisible="false"
+                            android:longClickable="false"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="30sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/coffee2"
+                        android:padding="7dp"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/todo2" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginStart="13dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Capucinno Uno"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rp." />
+                            <TextView
+                                android:id="@+id/harga1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="none"
+                                android:cursorVisible="false"
+                                android:longClickable="false"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:text="18500"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:layout_marginRight="0dp"
+                        android:orientation="horizontal" >
+                        <EditText
+                            android:id="@+id/integer_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="40dp"
+                            android:inputType="none"
+                            android:cursorVisible="false"
+                            android:longClickable="false"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:text="2"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="30sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!--Confirmation Payment-->
+            <LinearLayout
+                android:id="@+id/payment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="25dp"
+                    android:textSize="15sp"
+                    android:gravity="left"
+                    android:text="Choose your Payment Option" />
+                <RadioGroup
+                    android:id="@+id/radioid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+                        <RadioButton
+                            android:id="@+id/midtrans"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:onClick="onRadioButtonClicked"
+                            android:text="Midtrans"
+                            android:textSize="0sp"
+                            tools:ignore="OnClick" />
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/logo_midtrans"
+                            android:padding="7dp"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@string/todo2" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginStart="13dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Midtrans"
+                                android:textSize="20sp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"/>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12sp"
+                                    android:text="Bank Transfer, Supermarket, QRIS, Dana" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+                        <RadioButton
+                            android:id="@+id/alipay"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:text="Wechat pay"
+                            android:textSize="0sp"
+                            android:onClick="onRadioButtonClicked"
+                            tools:ignore="OnClick" />
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/icon_alipay"
+                            android:padding="7dp"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@string/todo2" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginStart="13dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Alipay"
+                                android:textSize="20sp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"/>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12sp"
+                                    android:text="Using your Alipay balance" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Payment use"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/result_radiobutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        android:textSize="16sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Midtrans"
+                        android:layout_marginStart="7dp"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                        android:visibility="invisible"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--Check Payment -->
+            <LinearLayout
+                android:id="@+id/checkpayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="TOTAL  : "
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textSize="15sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:text="Rp."
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginStart="3dp"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/confirm_totalprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginStart="3dp"
+                    android:textSize="15sp" />
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="115" />
+                <Button
+                    android:id="@+id/payment"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="PAYMENT NOW"
+                    android:textSize="12dp"
+                    android:backgroundTint="@color/teal_200"
+                    android:textStyle="bold"
+                    android:contentDescription="@string/todo2"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Welcome euy"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/teal_200"
+        app:fabCradleMargin="20dp"
+        app:fabCradleRoundedCornerRadius="20dp"
+        app:fabCradleVerticalOffset="8dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp"
+            android:background="@color/teal_200"
+            app:menu="@menu/bottom_nav_menu" />
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:contentDescription="@string/todo2"
+        android:src="@drawable/icon_scanner"
+        app:layout_anchor="@id/bottom_app_bar" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

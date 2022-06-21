@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+<!--        //Layout Info Profile-->
+    <LinearLayout
+            android:id="@+id/layout_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/profile_man"
+                android:contentDescription="@string/todo2" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/hi"
+                android:textStyle="bold"
+                android:layout_marginStart="15dp"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/usernameprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginStart="1dp"
+                android:textSize="15sp" />
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="115" />
+            <ImageButton
+                android:id="@+id/btn_logout"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="15dp"
+                android:backgroundTintMode="screen"
+                android:contentDescription="@string/todo2"
+                android:src="@drawable/icon_logout" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+    <!--    Bottom App bar -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--    Banner Code-->
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="10dp" />
+            <!--    BestCafe Code Cardview-->
+            <LinearLayout
+                android:id="@+id/bestcafe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:contentDescription="@string/todo2"
+                    android:src="@drawable/location" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:text="Best Cafe for You"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="115" />
+
+                <TextView
+                    android:id="@+id/btn_seecafe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="25dp"
+                    android:backgroundTintMode="screen"
+                    android:clickable="true"
+                    android:textColor="@color/blue"
+                    android:contentDescription="@string/todo2"
+                    android:gravity="center"
+                    android:onClick="click"
+                    android:src="@drawable/icon_settings"
+                    android:text="See All" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <!--    CardViewcoding-->
+
+
+            <!--    BestCafe Code Cardview-->
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <!--        CARDVIEW CAFE 1 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="15dp">
+
+                        <LinearLayout
+                            android:id="@+id/cafe1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/teal_200"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@color/teal_200"
+                                android:padding="10dp"
+                                android:src="@drawable/cafe2" />
+
+                            <Button
+                                android:id="@+id/cafetree"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:text="CAFE TREE"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!--CARDVIEW 2 -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="15dp">
+
+                        <LinearLayout
+                            android:id="@+id/trustednews"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/teal_200"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@color/teal_200"
+                                android:padding="10dp"
+                                android:src="@drawable/cafe1" />
+
+                            <Button
+                                android:id="@+id/cafeplace"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:text="CAFE PLACE"
+                                android:textColor="@color/white"
+                                android:textSize="13dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!--cardview3-->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/teal_200"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@color/teal_200"
+                                android:padding="10dp"
+                                android:src="@drawable/cafe3" />
+
+                            <Button
+                                android:id="@+id/caferow"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:text="CAFE ROW"
+                                android:textColor="@color/white"
+                                android:textSize="13dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!--cARDVIEW4-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:layout_marginRight="30dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="120dp"
+                            android:layout_height="150dp"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="15dp">
+
+                            <LinearLayout
+                                android:id="@+id/profileintent"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/teal_200"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@color/teal_200"
+                                    android:padding="10dp"
+                                    android:src="@drawable/cafe4" />
+
+                                <Button
+                                    android:id="@+id/cafeday"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:text="CAFE DAY"
+                                    android:textColor="@color/white"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:id="@+id/bestfood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:contentDescription="@string/todo2"
+                    android:src="@drawable/icon_coffee" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:text="Best Coffee for You"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="115" />
+
+                <TextView
+                    android:id="@+id/btn_seekopi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="25dp"
+                    android:backgroundTintMode="screen"
+                    android:clickable="true"
+                    android:textColor="@color/blue"
+                    android:contentDescription="@string/todo2"
+                    android:gravity="center"
+                    android:onClick="click"
+                    android:src="@drawable/icon_settings"
+                    android:text="See All" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <!--    Best coffee CardViewcoding-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_marginTop="5dp"
+                android:clipToPadding="false"
+                android:gravity="center|top"
+                android:orientation="horizontal">
+
+                <!--        CARDVIEW COFFEE 1 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="15dp">
+
+                    <LinearLayout
+                        android:id="@+id/food1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@color/teal_200"
+                            android:padding="10dp"
+                            android:src="@drawable/coffee1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="Americano"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!--        CARDVIEW COFFEE 2 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="15dp">
+
+                    <LinearLayout
+                        android:id="@+id/food2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@color/teal_200"
+                            android:padding="10dp"
+                            android:src="@drawable/coffee3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="Ice Coffee"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!--        CARDVIEW COFFEE 3 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="15dp">
+
+                    <LinearLayout
+                        android:id="@+id/food3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/teal_200"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@color/teal_200"
+                            android:padding="10dp"
+                            android:src="@drawable/coffee2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:text="Ice Coffee"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!--        CARDVIEW COFFEE 4 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="80dp"
+                        android:layout_height="90dp"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="15dp">
+
+                        <LinearLayout
+                            android:id="@+id/food4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/teal_200"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="@color/teal_200"
+                                android:padding="10dp"
+                                android:src="@drawable/coffee4" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:text="Ice Shaked"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/teal_200"
+        app:fabCradleMargin="15dp"
+        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleVerticalOffset="0dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp"
+            android:background="@color/teal_200"
+            app:menu="@menu/bottom_nav_menu" />
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+<!--    FAB SCANNER -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:contentDescription="@string/todo2"
+        android:src="@drawable/icon_scanner"
+        app:layout_anchor="@id/bottom_app_bar" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

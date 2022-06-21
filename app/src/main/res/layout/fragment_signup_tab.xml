@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".signup_tab">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="366dp"
+        tools:ignore="UselessParent">
+
+        <EditText
+            android:id="@+id/email_signup"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edittextstyle"
+            android:hint="Email"
+            android:autofillHints="" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:passwordToggleEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_signup"
+                app:passwordToggleEnabled="true"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:inputType="textPassword"
+                android:background="@drawable/edittextstyle"
+                android:hint="Password" />
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/buttonstyle"
+                android:text="Sign Up"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:onClick="buttonClick"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            app:passwordToggleEnabled="true"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" >-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/confirmpassword_signup"-->
+<!--                android:layout_width="330dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:inputType="textPassword"-->
+<!--                android:background="@drawable/edittextstyle"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:hint="Confirm Password" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btn_signup"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:layout_marginTop="40dp"-->
+<!--                android:background="@drawable/buttonstyle"-->
+<!--                android:text="Sign Up"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="16dp" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="45dp" >
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/baidu"
+                android:gravity="center" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8dp"
+                android:elevation="35dp"
+                android:scaleType="center"
+                android:src="@drawable/wechat"
+                android:gravity="center" />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/google"
+                android:gravity="center" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/instagram"
+                android:gravity="center" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar_signup"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:visibility="invisible"
+        android:indeterminateTint="@color/black"
+        />
+
+</FrameLayout>
